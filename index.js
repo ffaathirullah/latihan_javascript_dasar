@@ -62,7 +62,7 @@ var mhs = {
   alamat: {
     jalan: "Jl.abc no.24",
     kota: "Bandung",
-    provinsi: "jawa barat",
+    provinsi: "jawa baratt",
   },
 };
 console.log(mhs.alamat.kota);
