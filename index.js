@@ -40,8 +40,17 @@
 // });
 // console.log(angka2.join(" - "));
 
-var angka = [1, 2, 10, 3, 6, 20, 5, 7, 3];
-angka.sort(function (a, b) {
-  return a - b;
+// var angka = [1, 2, 10, 3, 6, 20, 5, 7, 3];
+// angka.sort(function (a, b) {
+//   return a - b;
+// });
+// console.log(angka.join(" - "));
+
+//filter mencari array banyak nilai dan mengembalikan array
+//find mencari 1 nilai
+
+var angka2 = [1, 2, 10, 3, 6, 20, 5, 7, 3];
+var angka = angka2.find(function (a) {
+  return a > 5;
 });
-console.log(angka.join(" - "));
+console.log(angka);
