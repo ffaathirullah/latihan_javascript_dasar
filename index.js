@@ -34,8 +34,12 @@
 //   console.log(`mahasiswa ke ${i} adalah ${e}`);
 // });
 
-var angka = [1, 2, 3, 4, 5, 6, 7, 8];
-var angka2 = angka.map((e) => {
-  return e * 2;
-});
-console.log(angka2.join(" - "));
+// var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// var angka2 = angka.map((e) => {
+//   return e * 2;
+// });
+// console.log(angka2.join(" - "));
+
+var angka = [1, 2, 3, 6, 5, 7, 3];
+angka.sort();
+console.log(angka.join(" - "));
