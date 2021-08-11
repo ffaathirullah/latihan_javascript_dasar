@@ -40,6 +40,8 @@
 // });
 // console.log(angka2.join(" - "));
 
-var angka = [1, 2, 3, 6, 5, 7, 3];
-angka.sort();
+var angka = [1, 2, 10, 3, 6, 20, 5, 7, 3];
+angka.sort(function (a, b) {
+  return a - b;
+});
 console.log(angka.join(" - "));
