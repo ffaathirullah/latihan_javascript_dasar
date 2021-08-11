@@ -21,8 +21,8 @@
 // var arr2 = arr.slice(1, 3);
 // console.log(arr2.join("-"));
 
-var angka = [1, 2, 3, 4, 5, 6, 7, 8];
-var nama = ["fachrul", "asep", "udin"];
+// var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// var nama = ["fachrul", "asep", "udin"];
 // var cetak = function (e) {
 //   console.log();
 // };
@@ -30,6 +30,12 @@ var nama = ["fachrul", "asep", "udin"];
 //   console.log(e);
 // });
 
-nama.forEach((e, i) => {
-  console.log(`mahasiswa ke ${i} adalah ${e}`);
+// nama.forEach((e, i) => {
+//   console.log(`mahasiswa ke ${i} adalah ${e}`);
+// });
+
+var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+var angka2 = angka.map((e) => {
+  return e * 2;
 });
+console.log(angka2.join(" - "));
