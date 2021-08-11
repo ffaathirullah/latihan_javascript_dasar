@@ -14,6 +14,9 @@
 // console.log(faktorial(5));
 //splice(indexAwal , mauDihapusBerapa)
 
-var arr = ["fachrul", "galih", "nova"];
-arr.splice(2, 0, "doddy");
-console.log(arr.join(" - "));
+var arr = ["fachrul", "galih", "nova", "agus", "asep"];
+// arr.splice(2, 0, "doddy");
+// console.log(arr.join(" - "));
+
+var arr2 = arr.slice(1, 3);
+console.log(arr2.join("-"));
