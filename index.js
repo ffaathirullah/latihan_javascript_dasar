@@ -55,14 +55,46 @@
 // });
 // console.log(angka);
 
-var mhs = {
-  nama: "fachrul faathir",
-  umur: 31,
-  ips: [21, 34, 45, 56],
-  alamat: {
-    jalan: "Jl.abc no.24",
-    kota: "Bandung",
-    provinsi: "jawa baratt",
-  },
-};
-console.log(mhs.alamat.kota);
+// var mhs = {
+//   nama: "fachrul faathir",
+//   umur: 31,
+//   ips: [21, 34, 45, 56],
+//   alamat: {
+//     jalan: "Jl.abc no.24",
+//     kota: "Bandung",
+//     provinsi: "jawa baratt",
+//   },
+// };
+// console.log(mhs.alamat.kota);
+
+//this = menggunkan epxression akan mengembalikan objectnya
+
+//membuat object angkot
+function Angkot(sopir, trayek, penumpang, kas) {
+  this.sopir = sopir;
+  this.trayek = trayek;
+  this.penumpang = penumpang;
+  this.kas = kas;
+
+  this.penumpangNaik = function (namaPenumpang) {
+    this.penumpang.push(namaPenumpang);
+    return this.penumpang;
+  };
+
+  this.penumpangTurun = function (namaPenumpang, bayar) {
+    if (this.penumpang.length == 0) {
+      alert("angkot masih kosong");
+      return penumpang;
+    }
+
+    for (var i = 0; i < penumpang.length; i++) {
+      if (this.penumpang[i] == namaPenumpang) {
+        this.penumpang[i] = undefined;
+        this.kas += bayar;
+        return this.penumpang;
+      }
+    }
+  };
+}
+
+var angkot1 = new Angkot("fachrul", ["bandung", "cirebon"], [], 0);
